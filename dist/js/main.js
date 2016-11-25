@@ -13,14 +13,7 @@ $(document).ready(function(){
         indicators: true
     });
 });
-$(document).ready(function(){
-    $('.materialboxed').materialbox();
-});
-$(document).ready(function(){
-    $('.slider').slider({
-    });
-});
-$('.carousel.carousel-slider').carousel({full_width: true});
-$(document).ready(function(){
-    $('.parallax').parallax();
+$('.carousel.carousel-slider').carousel({
+    indicators: true,
+    full_width: true
 });
