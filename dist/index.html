@@ -1,89 +1,880 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>SD Graphics</title>
-        <meta name="description" content="SD Graphics is a graphic design company.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="HTML5 Design Template">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 
-        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <!-- Place favicon.ico in the root directory -->
-        <link rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+        <!-- Main CSS -->
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-              rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Linea Basic -->
+        <link rel="stylesheet" href="css/lineabasic.css">
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="css/animate.min.css">
+        <!-- Slick carousel -->
+        <link rel="stylesheet" href="css/slick.css">
+        <!-- Magnific Popup -->
+        <link rel="stylesheet" href="css/magnific-popup.css">
+
+        <script src="js/vendor/modernizr.js"></script>
+
     </head>
-    <body style="padding: 0; background: url('img/sd-graphics-bg.jpg') center">
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <body data-spy="scroll" data-offset="50" data-target=".navbar-default">
 
-        <header>
-            <nav>
-                <div class="nav-wrapper" >
-                    <a style="height: 100%;" href="index.html" class="brand-logo">
-                        <img style="height: 200%;" src="img/sd-graphics-logo.png" />
+        <!-- Preloader -->
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top is-transparent" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand navbar-brand-img hidden-xs" href="index.html">
+                        <!--SD Graphics-->
+                        <img src="img/sd-graphics-logo.png"/>
                     </a>
-                    <ul id="nav-mobile" class="right">
-                        <li><a class="dropdown-button"
-                               data-beloworigin="true"
-                               data-constrainwidth="false"
-                               data-activates="designs-dropdown">Portfolio</a></li>
-                        <!--<li><a href="partials/pages/about-us.html">About Us</a></li>-->
-                    </ul>
-                    <ul class="dropdown-content" id="designs-dropdown" style="width: 200px;">
-                        <li><a href="partials/pages/designs.html">Designs</a></li>
-                        <li><a href="partials/pages/packaging.html">Packaging</a></li>
-                        <li><a href="partials/pages/corporate-id.html">Corporate Identity</a></li>
-                        <li><a href="partials/pages/publications.html">Publications</a></li>
-                        <li><a href="partials/pages/logos.html">Logos</a></li>
-                        <li><a href="partials/pages/illustrations.html">Illustrations</a></li>
-                    </ul>
+                    <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="index.html">SD Graphics</a>
                 </div>
-            </nav>
-        </header>
-
-        <main>
-            <h1 style="display: table; width: 100%; height: 80px; margin-top: 40vh; padding-left: 30vw; background-color: rgba(0, 0, 0, 0.5); color: whitesmoke">
-                <div style="display: table-cell; vertical-align: middle;">
-                    Design Starts
-                    <a style="display: inline-table; font-style: italic; line-height: inherit" href="partials/pages/designs.html" class="lime-text" >Here</a>
-                </div>
-            </h1>
-            <!--<img src="img/FVRH%20_OB2.jpg" style="width:100%;">-->
-            <!--<div class="parallax-container">-->
-                <!--<div class="parallax">-->
-                    <!--<img src="img/web-design-2016/fvrh-ob.png" style="width: 100%;"/>-->
-                <!--</div>-->
-            <!--</div>-->
-
-        </main>
-
-        <footer class="page-footer">
-            <div class="footer-copyright">
-                <div class="container">
-                    © 2016 Copyright
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-        </footer>
+        </nav>
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
-        <script src="js/plugins.js"></script>
+        <!-- Header -->
+        <header id="home" class="header" style="padding: 0; background-image: url('img/backgrounds/sd-graphics-bg.jpg')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="banner">
+                            <h4 style="margin-top: -150px;">
+                                Design Starts
+                                <a class="yellow-text" href="#portfolio">Here</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <!--<span class="scroll-down icon icon-basic-magic-mouse"></span>-->
+                </div>
+            </div>
+        </header>
+
+        <!-- About -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <header class="section-header">
+                            <h3 class="section-title" data-text="About Us">We Get the Job Done</h3>
+                            <p>Climb any mountain, swim any ocean. We will work extremely hard for you
+                                and your project - sometimes consuming extreme amounts of coffee in the process!</p>
+                        </header>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="mockup" data-animation="fadeInUp" data-animation-delay="02">
+                            <img src="img/stationery.jpg" alt="mockup" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes -->
+        <section class="quotes" style="background: url('img/backgrounds/quote-bg.jpg') center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="quote-list">
+                            <li>
+                                <blockquote class="quote">
+                                    It’s very easy to be different, but very difficult to be better.
+                                    <cite>Jonathan Ive</cite>
+                                </blockquote>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="portfolio container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <header class="section-header">
+                            <h4 class="section-title" data-text="Portfolio">Check us out</h4>
+                            <p>A sampling of recent successful projects</p>
+                        </header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul id="filter" class="filter">
+                            <li><a data-filter=".publication" class="btn btn-default btn-sm" role="button">Publications</a></li>
+                            <li><a data-filter=".design" class="btn btn-default btn-sm" role="button">Designs</a></li>
+                            <li><a data-filter=".corporate-id" class="btn btn-default btn-sm" role="button">Corporate Identity</a></li>
+                            <li><a data-filter=".illustration" class="btn btn-default btn-sm" role="button">Illustrations</a></li>
+                            <li><a data-filter=".logo" class="btn btn-default btn-sm" role="button">Logos</a></li>
+                            <li><a data-filter=".apparel" class="btn btn-default btn-sm" role="button">Apparel</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <article class="isotope html-code grid-of-images">
+                            <div class="grid-sizer"></div>
+                            <div class="gutter-sizer"></div>
+                            <!-- ALL IMAGES HERE -->
+                            <!-- Publications -->
+                            <div class="publication zoom-gallery">
+                                <div class="item publication">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/publications/Applied-1600.jpg">
+                                            <img src="img/publications/Applied-1600.jpg" class="img-responsive" alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item publication">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/publications/Atlanta-1600.jpg">
+                                            <img src="img/publications/Atlanta-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item publication">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/publications/DDD-1600F.jpg">
+                                            <img src="img/publications/DDD-1600F.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item publication">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/publications/DI-two-1600.jpg">
+                                            <img src="img/publications/DI-two-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <!-- <div class="item publication">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/publications/equipped-1600.jpg">
+                                            <img src="img/publications/equipped-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div> -->
+                                <div class="item publication">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/publications/Focused-1600.jpg">
+                                            <img src="img/publications/Focused-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+
+                                <div class="item publication">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/publications/Patrons-1600.jpg">
+                                            <img src="img/publications/Patrons-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item publication">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/publications/Sport-1600.jpg">
+                                            <img src="img/publications/Sport-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <!-- <div class="item publication">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/publications/wellbeing-1600.jpg">
+                                            <img src="img/publications/wellbeing-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div> -->
+                                <div class="item publication">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/publications/WP-1600.jpg">
+                                            <img src="img/publications/WP-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <!-- Design -->
+                            <div class="design zoom-gallery">
+                                <div class="item design">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/designs/DIa-1600.jpg">
+                                            <img src="img/designs/DIa-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item design">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/designs/Fresh-1600.jpg">
+                                            <img src="img/designs/Fresh-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <!-- <div class="item design">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/designs/Global-1600.jpg">
+                                            <img src="img/designs/Global-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div> -->
+                                <div class="item design">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/designs/Go-Take-1600.jpg">
+                                            <img src="img/designs/Go-Take-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <!-- <div class="item design">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/designs/HCIA-1600.jpg">
+                                            <img src="img/designs/HCIA-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div> -->
+                                <!-- <div class="item design">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/designs/Heart-1600F.jpg">
+                                            <img src="img/designs/Heart-1600F.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div> -->
+                                <div class="item design">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/designs/Love-1600.jpg">
+                                            <img src="img/designs/Love-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item design">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/designs/MSL-1600.jpg">
+                                            <img src="img/designs/MSL-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item design">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/designs/OCR-1600.jpg">
+                                            <img src="img/designs/OCR-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item design">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/designs/UCIB-1600.jpg">
+                                            <img src="img/designs/UCIB-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <!-- Corporate Id -->
+                            <div class="corporate-id zoom-gallery">
+                                <div class="item corporate-id">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/corporate-identity/Arcina-800.jpg">
+                                            <img src="img/corporate-identity/Arcina-800.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item corporate-id">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/corporate-identity/Bushire-800.jpg">
+                                            <img src="img/corporate-identity/Bushire-800.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item corporate-id">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/corporate-identity/College-800.jpg">
+                                            <img src="img/corporate-identity/College-800.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item corporate-id">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/corporate-identity/DM-800.jpg">
+                                            <img src="img/corporate-identity/DM-800.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <!-- <div class="item corporate-id">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/corporate-identity/FV-OB-800.jpg">
+                                            <img src="img/corporate-identity/FV-OB-800.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item corporate-id">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/corporate-identity/FV-Passport-800.jpg">
+                                            <img src="img/corporate-identity/FV-Passport-800.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div> -->
+                                <div class="item corporate-id">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/corporate-identity/IGS-800.jpg">
+                                            <img src="img/corporate-identity/IGS-800.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item corporate-id">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/corporate-identity/PH-800F.jpg">
+                                            <img src="img/corporate-identity/PH-800F.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item corporate-id">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/corporate-identity/Union-800.jpg">
+                                            <img src="img/corporate-identity/Union-800.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <!-- Illustration -->
+                            <div class="illustration zoom-gallery">
+                                <div class="item illustration">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/illustrations/3-hearts-1600F.jpg">
+                                            <img src="img/illustrations/3-hearts-1600F.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item illustration">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/illustrations/Alpaca-1600.jpg">
+                                            <img src="img/illustrations/Alpaca-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <!-- <div class="item illustration">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/illustrations/Doc-1600.jpg">
+                                            <img src="img/illustrations/Doc-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div> -->
+                                <div class="item illustration">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/illustrations/money-tree-1600.jpg">
+                                            <img src="img/illustrations/money-tree-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <!-- <div class="item illustration">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/illustrations/Neuro-1600.jpg">
+                                            <img src="img/illustrations/Neuro-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div> -->
+                                <div class="item illustration">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/illustrations/Reader-1600.jpg">
+                                            <img src="img/illustrations/Reader-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <!-- Logo -->
+                            <div class="logo zoom-gallery">
+                                <!-- <div class="item logo">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/logos/Babyland-1600.jpg">
+                                            <img src="img/logos/Babyland-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div> -->
+                                <div class="item logo">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/logos/DGD-1600.jpg">
+                                            <img src="img/logos/DGD-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item logo">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/logos/DRL-1600.jpg">
+                                            <img src="img/logos/DRL-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <!-- <div class="item logo">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/logos/FV-1600.jpg">
+                                            <img src="img/logos/FV-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div> -->
+                                <div class="item logo">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/logos/G&G-1600.jpg">
+                                            <img src="img/logos/G&G-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item logo">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/logos/Imagine8-tshirt-1600F.jpg">
+                                            <img src="img/logos/Imagine8-tshirt-1600F.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+
+                                    </figure>
+                                </div>
+                                <div class="item logo">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/logos/KWP-1600.jpg">
+                                            <img src="img/logos/KWP-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item logo">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/logos/Magnet-1600.jpg">
+                                            <img src="img/logos/Magnet-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item logo">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/logos/Plymouth-1600.jpg">
+                                            <img src="img/logos/Plymouth-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item logo">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/logos/Thyme-1600.jpg">
+                                            <img src="img/logos/Thyme-1600.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <!-- Apparel -->
+                            <div class="apparel zoom-gallery">
+                                <div class="item apparel">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/apparel/imagine8tF.jpg">
+                                            <img src="img/apparel/imagine8tF.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item apparel">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/apparel/imagine82t.jpg">
+                                            <img src="img/apparel/imagine82t.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item apparel">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/apparel/prot.jpg">
+                                            <img src="img/apparel/prot.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item apparel">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/apparel/runt.jpg">
+                                            <img src="img/apparel/runt.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item apparel">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/apparel/cawst.jpg">
+                                            <img src="img/apparel/cawst.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="item apparel">
+                                    <figure class="item-figure">
+                                        <a class="image-link" href="img/apparel/8nationt.jpg">
+                                            <img src="img/apparel/8nationt.jpg" class="img-responsive"
+                                                 alt="img">
+                                        </a>
+                                    </figure>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call To Action -->
+        <section class="call-to container-fluid" style="background: url('img/backgrounds/call-to-action-bg.jpg') center; background-size: 100%;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <article class="action">
+                            <h5>Want your idea seen by all?</h5>
+                            <a href="#contact" class="btn btn-danger" role="button">Lets talk</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="services container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <header class="section-header">
+                            <h4 class="section-title" data-text="Services">At Your Service</h4>
+                            <p>Projects come in all shapes and sizes. From the enormous to the small, we do it all.</p>
+                            <!--<p>With the on-going and the rush - with excitement you will certainly gush.</p>-->
+                        </header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <a href="#portfolio" onclick="goToPortfolio('.design')">
+                            <div class="service" data-animation="fadeInUp" data-animation-delay="01">
+                                <i class="icon icon-basic-display"></i>
+                                <h5>Design</h5>
+                                <p>The art and skill of creating words
+                                    and images to advertise your product
+                                    or service.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <a href="#portfolio" onclick="goToPortfolio('.design')">
+                            <div class="service" data-animation="fadeInUp" data-animation-delay="01">
+                                <i class="icon icon-basic-gunsight"></i>
+                                <h5>Advertising</h5>
+                                <p>Sell your product, service or idea
+                                    with outstanding visual forms of
+                                    marketing communication.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <a href="#portfolio" onclick="goToPortfolio('.apparel')">
+                            <div class="service" data-animation="fadeInUp" data-animation-delay="01">
+                                <i class="icon icon-basic-photo"></i>
+                                <h5>Apparel</h5>
+                                <p>Your followers and all who wear your
+                                    brand, are mini walking billboards!
+                                    Get your message out.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <a href="#portfolio" onclick="goToPortfolio('.corporate-id')">
+                            <div class="service" data-animation="fadeInUp" data-animation-delay="01">
+                                <i class="icon icon-basic-gear"></i>
+                                <h5>Corporate Identity</h5>
+                                <p>The presentation and continuity
+                                    of your logo, slogan, stationery,
+                                    uniforms, buildings, and décor -
+                                    are all important statements of
+                                    your business.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <a href="#portfolio" onclick="goToPortfolio('.publication')">
+                            <div class="service" data-animation="zoomInUp" data-animation-delay="01">
+                                <i class="icon icon-basic-paperplane"></i>
+                                <h5>Publications</h5>
+                                <p>Internal, local, community,
+                                    as well as national and international
+                                    publications, for any usage including
+                                    multi-language.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <a href="#portfolio" onclick="goToPortfolio('.corporate-id')">
+                            <div class="service" data-animation="zoomInUp" data-animation-delay="01">
+                                <i class="icon icon-basic-case"></i>
+                                <h5>Branding</h5>
+                                <p>Establish your name and “look” with
+                                    design, style and color that identifies
+                                    and differentiates you and your
+                                    product from the others.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <a href="#portfolio" onclick="goToPortfolio('.illustration')">
+                            <div class="service" data-animation="zoomInUp" data-animation-delay="01">
+                                <i class="icon icon-basic-sheet-pencil"></i>
+                                <h5>Illustrations</h5>
+                                <p>Sometimes an illustration, such
+                                    as an infographic, helps convey your
+                                    message, and also can relate abstract
+                                    concepts and ideas. </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <a href="#portfolio" onclick="goToPortfolio('.logo')">
+                            <div class="service" data-animation="zoomInUp" data-animation-delay="01">
+                                <i class="icon icon-basic-life-buoy"></i>
+                                <h5>Logos</h5>
+                                <p>Identify your brand with a unique
+                                    symbol or design that
+                                    reflects your message.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog -->
+        <section id="blog" class="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <header class="section-header">
+                            <h4 class="section-title" data-text="Need to Know">Why us? Why now?</h4>
+                            <p>How to make your project a success</p>
+                        </header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <article class="post preview gridview">
+                            <div class="post-media">
+                                <a href="blog/jumpToSuccess.html"><img src="img/blogs/jump-to-success.jpg"></a>
+                            </div>
+                            <div class="caption">
+                                <ul class="meta-list">
+                                    <li><span class="meta">BRANDING</span></li>
+                                </ul>
+                                <h5 class="post-title">
+                                    <a class="yellow-text" href="blog/jumpToSuccess.html">JUMP TO SUCCESS</a>
+                                </h5>
+                                <p>Your customers need a reason to buy from
+                                    you and not the other guys</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <article class="post preview gridview">
+                            <div class="post-media">
+                                <a href="blog/greeneryPaytone.html"><img src="img/blogs/pantone-color-of-the-year.jpg"></a>
+                            </div>
+                            <div class="caption">
+                                <ul class="meta-list">
+                                    <li><span class="meta">THE WORLD OF COLOR</span></li>
+                                </ul>
+                                <h5 class="post-title">
+                                    <a class="yellow-text" href="blog/greeneryPaytone.html">GREENERY PANTONE 15-0343</a>
+                                </h5>
+                                <p>PANTONE 2017 Color of the Year</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <article class="post preview gridview">
+                            <div class="post-media">
+                                <a href="blog/outstandingInOurField.html"><img src="img/blogs/outstanding-in-field.jpg"></a>
+                            </div>
+                            <div class="caption">
+                                <ul class="meta-list">
+                                    <li><span class="meta">DESIGN</span></li>
+                                </ul>
+                                <h5 class="post-title">
+                                    <a class="yellow-text" href="blog/outstandingInOurField.html">OUTSTANDING IN OUR FIELD</a>
+                                </h5>
+                                <p>5 reasons why you need SD Graphics</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <header class="section-header">
+                            <h4 class="section-title" data-text="Contact">Get in touch</h4>
+                        </header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <article class="form-detached">
+                            <form action="php/contact-form.php" id="contact-form">
+                                <div class="alert alert-success hidden" id="contact-alert-success">
+                                    <strong>Success!</strong> Thank you for your message. Reply will be in a while!
+                                </div>
+                                <div class="alert alert-danger hidden" id="contact-alert-error">
+                                    <strong>Error!</strong> Something went wrong sending your message.
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="name"></label>
+                                    <input type="text" class="form-control" value="" placeholder="Name" data-msg-required="Please enter your name." name="name" id="name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="email"></label>
+                                    <input type="email" value="" placeholder="E-mail" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." class="form-control" name="email" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="message"></label>
+                                    <textarea placeholder="Enter your message..." data-msg-required="Please enter your message." rows="6" class="form-control" name="message" id="message"></textarea>
+                                </div>
+                                <input type="submit" value="Send Message" class="btn btn-default btn-block" data-loading-text="Loading...">
+                            </form>
+                        </article>
+                    </div>
+                    <div class="col-md-5">
+                        <address class="address">
+                            <i class="icon icon-basic-mail"></i>
+                            <a href="mailto:#sdgraphicsoc@gmail.com">sdgraphicsoc@gmail.com</a>
+                        </address>
+                        <address class="address">
+                            <i class="icon icon-basic-smartphone"></i>
+                            (714) 633-1960
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--&lt;!&ndash; Gmap &ndash;&gt;-->
+        <!--<section class="map">-->
+            <!--<a class="show-map"><div class="helper"><i class="fa fa-plus"></i><span>Show Map</span></div></a>-->
+            <!--<div id="my-map"></div>-->
+        <!--</section>-->
+
+        <!--&lt;!&ndash; Footer &ndash;&gt;-->
+        <!--<footer class="footer">-->
+            <!--<div class="container">-->
+                <!--<div class="row">-->
+                    <!--<div class="col-md-12" data-animation="zoomInRight" data-animation-delay="01">-->
+                        <!--<h6><a href="#">Lemonage</a></h6>-->
+                        <!--<ul class="social-list">-->
+                            <!--<li><a href="#" class="fa fa-facebook"></a></li>-->
+                            <!--<li><a href="#" class="fa fa-twitter"></a></li>-->
+                            <!--<li><a href="#" class="fa fa-pinterest"></a></li>-->
+                            <!--<li><a href="#" class="fa fa-flickr"></a></li>-->
+                            <!--<li><a href="#" class="fa fa-dribbble"></a></li>-->
+                            <!--<li><a href="#" class="fa fa-behance"></a></li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</footer>-->
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/vendor/fastclick.js"></script>
+
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src="js/vendor/jquery.appear.js"></script>                  <!-- jQuery Appear -->
+        <script src="js/vendor/jquery.easing.1.3.js"></script>              <!-- jQuery Easing -->
+        <script src="js/vendor/imagesloaded.pkgd.min.js"></script>          <!-- Imagesloaded -->
+        <script src="js/vendor/isotope.pkgd.min.js"></script>               <!-- Isotope -->
+        <script src="js/vendor/slick.min.js"></script>                      <!-- Slick carousel -->
+        <!--<script src="js/vendor/jquery.tweet.min.js"></script>               &lt;!&ndash; Tweet.js-Mod &ndash;&gt;-->
+        <script src="js/vendor/jquery.countTo.js"></script>                 <!-- Count To -->
+        <script src="js/vendor/jquery.easypiechart.min.js"></script>        <!-- easyPieChart -->
+        <script src="js/vendor/jquery.magnific-popup.min.js"></script>      <!-- Magnific Popup -->
+
         <script src="js/main.js"></script>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <!--<script>-->
-            <!--(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=-->
-            <!--function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;-->
-            <!--e=o.createElement(i);r=o.getElementsByTagName(i)[0];-->
-            <!--e.src='https://www.google-analytics.com/analytics.js';-->
-            <!--r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));-->
-            <!--ga('create','UA-XXXXX-X','auto');ga('send','pageview');-->
-        <!--</script>-->
+
+        <script src="js/vendor/jquery.validate.min.js"></script>            <!-- jQuery Validate -->
+        <script src="js/contact.js"></script>
+
+        <script src="http://maps.google.com/maps/api/js?sensor=false"></script><!-- GMap -->
+        <script src="js/vendor/gmap3.min.js"></script>
+        <script src="js/mymap.js"></script>
+
     </body>
 </html>
